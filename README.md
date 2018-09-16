@@ -46,14 +46,14 @@ The writeActivity class has one variable, a randomColor object, rColor. It has 3
 #### Methods: public randomColor, public void newColor(), getRed, getGreen, getBlue, getHex, getHexR, getHexG, getHexB, getColor
 This class holds an android color value and can generate a new one with the newColor method. It can also send the variables of the object with the get functions.
 
-## drawActivity
+## drawActivity Class
 #### Variables: static final int MY_WRITE, int defaultColor, drawCanvas thisCanvas, boolean saveOn
 #### Methods: void onCreate, void returnToMM, void colorSelect, void clear, void onRequestPermissionsResult
 This class extends AppCompatActivity and sets up the draw activity and provides methods for the buttons. It also asks for writing to external storage permissions if not granted and will run the media scanner on the saved picture from the drawCanvas so it is viewable by other android apps. The returnToMM is a function for the back button to return to the Main Menu activity. The clear function remakes the drawCanvas which clears the image on screen. The colorSelect function displays the AmbilWarna dialog for selecting color for the user and sets the drawCanvas color to that selected color. The save method calls the drawCanvas's save method and then runs the media scanner on the saved file. The onCreate creates teh activity and checks and requests for the storage permission.
 
-## drawCanvas
+## drawCanvas Class
 #### Variables: Paint paint, Path path, List<Pair<Path, Integer>> path_color_list, Canvas mCanvas, Bitmap mBitmap
 #### Methods: drawCanvas, void onDraw, boolean onTouchEvent, void setPaintColor, int getPaintColor, void setStrokeJoin, Paint.Join getStrokeJoin, void setStyle, Paint.Style getStyle, void setStrokeWidth, float getStrokeWidth, String saveImage,  void onMeasure
 
-
+The drawCanvas class extends the View class. Its overall function is to keep track of different colored paths and follow the path made by the user's finger and draw that path. All of its paint settings are accessible via setters and getters. The save function saves the mBitmap as a PNG file.
 
