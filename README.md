@@ -6,7 +6,7 @@ This is a simple android application that has a writing activity that randomly c
 There is no special deployment, just make sure that the app has its one storage permission in your app settings.
 
 # Instructions for use:
-Below is the main menu. From here you can pick the writing or drawing activity by selecting the appropriate button. Taping the return button returns to the main menu.
+Below is the main menu. From here you can pick the writing or drawing activity by selecting the appropriate button. 
 
 
 ![alt text](https://github.com/dylbo-baggins/DylanDunhamCEG4110HW1/blob/master/mainmenu.PNG)
