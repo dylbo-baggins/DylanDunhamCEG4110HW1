@@ -52,7 +52,8 @@ This class holds an android color value and can generate a new one with the newC
 This class extends AppCompatActivity and sets up the draw activity and provides methods for the buttons. It also asks for writing to external storage permissions if not granted and will run the media scanner on the saved picture from the drawCanvas so it is viewable by other android apps. The returnToMM is a function for the back button to return to the Main Menu activity. The clear function remakes the drawCanvas which clears the image on screen. The colorSelect function displays the AmbilWarna dialog for selecting color for the user and sets the drawCanvas color to that selected color. The save method calls the drawCanvas's save method and then runs the media scanner on the saved file. The onCreate creates teh activity and checks and requests for the storage permission.
 
 ## drawCanvas
-#### Variables:
-#### Methods: 
+#### Variables: Paint paint, Path path, List<Pair<Path, Integer>> path_color_list, Canvas mCanvas, Bitmap mBitmap
+#### Methods: drawCanvas, void onDraw, boolean onTouchEvent, void setPaintColor, int getPaintColor, void setStrokeJoin, Paint.Join getStrokeJoin, void setStyle, Paint.Style getStyle, void setStrokeWidth, float getStrokeWidth, String saveImage,  void onMeasure
+
 
 
