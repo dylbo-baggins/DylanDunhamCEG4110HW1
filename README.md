@@ -3,7 +3,7 @@
 This is a simple android application that has a writing activity that randomly changes the color of text and displays the color value. There is also the drawing activity where a user can draw with their finger with any color and save the drawing as an image on their phone.
 
 # Special Deployment
-There is no special deployment, just make sure that the app has its one storage permission in your app settings.
+There is no special deployment, just make sure that the app has its one storage permission in your app settings and move the apk on your phone and install.
 
 # Instructions for use:
 Below is the main menu. From here you can pick the writing or drawing activity by selecting the appropriate button. 
